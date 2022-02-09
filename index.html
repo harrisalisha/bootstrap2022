@@ -28,14 +28,18 @@
 
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
 
-           <div class="collapse navbar-collapse" id="Navbar">
-           
+            <div class="collapse navbar-collapse" id="Navbar">
+
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul> 
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span
+                                class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
             </div>
 
         </div>
@@ -45,13 +49,19 @@
         <div class="container">
             <div class="row row-header">
 
-                <div class="col-12 col-sm-6">                
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
                 </div>
 
-                <div class="col-12 col-sm">                
-                   <img src="img/logo.png" class="img-fluid">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm align-self-center">
+                    <a type="button" class="btn btn-block btn-warning text-light"
+                     href="#reserve-form">Reserve Table</a>
                 </div>
 
             </div>
@@ -66,10 +76,9 @@
             <div class="col col-sm order-sm-first col-md">
 
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/uthappizza.png" alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza  
+                        <h2 class="mt-0">Uthappizza
                             <span class="badge badge-danger">HOT</span>
                             <span class="badge badge-pill badge-secondary">$4.99</span>
                         </h2>
@@ -87,8 +96,17 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block" +>Featuring mouthwatering combinations with a choice of five
+                            different salads, six enticing appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Uthappizza">
+
+                </div>
             </div>
         </div>
 
@@ -98,8 +116,8 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/alberto.png" alt="Alberto Somayya">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
+                        alt="Alberto Somayya">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
@@ -107,11 +125,80 @@
                             International experience having worked closely with
                             whos-who in the culinary world, he specializes in
                             creating mouthwatering Indo-Italian fusion experiences.
-                            </p>
+                        </p>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
+
+        <div class="row row-content align-items-center" id="reserve-form">
+
+            <div class="card col-12 col-sm-8 border-corner">
+                <div class="d-flex bg-warning text-light">
+                    <div class="card-header py-3 px-3">
+                        <h3>Reserve Table</h3>
+                    </div>
+                </div>
+
+                <div class="d-flex px-3">
+                    <form>
+                        <div class="form-group row">
+                            <div for="guests" class="col col-md-2 col-form-label">Number of
+                                Guests</div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-inline" id="guest1" name="guests" value=""
+                                        autocomplete="off">1
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-inline" id="guest2" name="guests" value=""
+                                        autocomplete="off">2
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-inline" id="guest3" name="guests" value=""
+                                        autocomplete="off" checked>3
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-inline" id="guest4" name="guests" value=""
+                                        autocomplete="off">4
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-inline" id="guest5" name="guests" value=""
+                                        autocomplete="off">5
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-inline" id="guest6" name="guests" value=""
+                                        autocomplete="off">6
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-sm-12 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <input type="time" class="form-control" id="time" name="date" placeholder="Time">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-sm-2"></div>
+                            <div>
+                                <button class="btn btn-primary">Reserve</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col col-sm-2 order-sm-first"></div>
+        </div>
+
     </div>
 
     <footer class="footer">
@@ -132,18 +219,18 @@
                     <h5>Our Address</h5>
 
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              
-                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                      <i class="fa fa-envelope fa-lg"></i>: 
-                      <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+
+                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i>:
+                        <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
                 </div>
 
-                <div  class="col-12 col-sm-4 align-self-center">
+                <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -153,13 +240,13 @@
                         <a href="mailto:">Mail</a>
                     </div>
                 </div>
-           </div>
-           
-           <div class="row justify-content-center">             
+            </div>
+
+            <div class="row justify-content-center">
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
 
